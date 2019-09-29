@@ -226,10 +226,10 @@ function loadOptions() {
     $displayMinorMarkers[0].checked = localStorage.displayMinorMarkers == 1;
   }
 
-  var $displayObservationTime = $('#displayObservationTime');
-  if (localStorage.displayObservationTime) {
-    $displayObservationTime[0].checked = localStorage.displayObservationTime == 1;
-  }
+  // var $displayObservationTime = $('#displayObservationTime');
+  // if (localStorage.displayObservationTime) {
+  //   $displayObservationTime[0].checked = localStorage.displayObservationTime == 1;
+  // }
 
   var $displayUpdateTime = $('#displayUpdateTime');
   if (localStorage.displayUpdateTime) {
@@ -366,7 +366,7 @@ function getAndStoreConfigData() {
   var $displayLocation = $('#displayLocation');
   var $displayHourMarkers = $('#displayHourMarkers');
   var $displayMinorMarkers = $('#displayMinorMarkers');
-  var $displayObservationTime = $('#displayObservationTime');
+  // var $displayObservationTime = $('#displayObservationTime');
   var $displayUpdateTime = $('#displayUpdateTime');
   var $displayTempC = $('#displayTempC');
   var $displayTempF = $('#displayTempF');
@@ -396,7 +396,7 @@ function getAndStoreConfigData() {
     displayLocation: ($displayLocation[0].checked ? 1 : 0),
     displayHourMarkers: ($displayHourMarkers[0].checked ? 1 : 0),
     displayMinorMarkers: ($displayMinorMarkers[0].checked ? 1 : 0),
-    displayObservationTime: ($displayObservationTime[0].checked ? 1 : 0),
+    // displayObservationTime: ($displayObservationTime[0].checked ? 1 : 0),
     displayUpdateTime: ($displayUpdateTime[0].checked ? 1 : 0),
     displayTempC: ($displayTempC[0].checked ? 1 : 0),
     displayTempF: ($displayTempF[0].checked ? 1 : 0),
@@ -425,7 +425,7 @@ function getAndStoreConfigData() {
   localStorage.displayLocation = options.displayLocation;
   localStorage.displayHourMarkers = options.displayHourMarkers;
   localStorage.displayMinorMarkers = options.displayMinorMarkers;
-  localStorage.displayObservationTime = options.displayObservationTime;
+  // localStorage.displayObservationTime = options.displayObservationTime;
   localStorage.displayUpdateTime = options.displayUpdateTime;
   localStorage.displayTempC = options.displayTempC;
   localStorage.displayTempF = options.displayTempF;
